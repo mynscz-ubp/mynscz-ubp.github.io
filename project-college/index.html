@@ -31,7 +31,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top">My Blog</a>
+        <a class="navbar-brand" href="#page-top">Home</a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -76,10 +76,8 @@
       >
         <div class="d-flex justify-content-center">
           <div class="text-center">
-            <h1 class="mx-auto my-0 text-uppercase">Emul Mulyana</h1>
-            <h2 class="text-white-50 mx-auto mt-2 mb-5">
-              a slave who wants to be a slave boss.
-            </h2>
+            <h1 class="mx-auto my-0 text-uppercase">Project College</h1>
+            <h2 class="text-white-50 mx-auto mt-2 mb-5">here we go again.</h2>
             <a class="btn btn-primary" href="#about">Get Started</a>
           </div>
         </div>
@@ -107,14 +105,99 @@
       <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-          <div class="col-xl-8 col-lg-7">
-            <img
-              class="img-fluid mb-3 mb-lg-0"
-              src="assets/img/bg-masthead.jpg"
-              alt="..."
-            />
+          <div class="col-xl-8 col-lg-7"></div>
+          <div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-ls-8">
+                <h2 class="text-black mb-4">Atribut</h2>
+                <p class="text-black-50">
+                  Atribut adalah karakteristik atau properti yang menjelaskan 
+                  suatu entitas. Setiap entitas dapat memiliki beberapa atribut, 
+                  yang memuat informasi lebih lanjut tentang entitas tersebut. 
+                  Atribut merepresentasikan nilai yang dimiliki oleh entitas.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-xl-4 col-lg-5">
+          <div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-ls-8">
+                <h2 class="text-black mb-4">Entitas</h2>
+                <p class="text-black-50">
+                  Entitas adalah objek atau benda nyata yang dapat dibedakan dalam 
+                  sistem yang sedang dimodelkan. Entitas biasanya merepresentasikan 
+                  hal-hal seperti orang, tempat, objek, konsep, atau kejadian yang 
+                  relevan dengan data yang akan disimpan dalam sistem.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-ls-8">
+                <h2 class="text-black mb-4">Relasi</h2>
+                <p class="text-black-50">
+                  Relasi adalah hubungan antara dua atau lebih entitas. Relasi 
+                  menjelaskan bagaimana entitas-entitas tersebut berinteraksi satu 
+                  sama lain dalam sistem.
+                </p>
+              </div>
+            </div>
+          </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-ls-8">
+                <h2 class="text-black mb-4">Relasi</h2>
+                <p class="text-black-50">
+                  Primary Key adalah atribut atau kombinasi atribut yang secara unik mengidentifikasi setiap baris atau catatan dalam sebuah tabel. Primary Key harus memenuhi dua syarat:
+
+Nilainya unik untuk setiap baris.
+Tidak boleh bernilai null (kosong).
+Contoh Primary Key dalam ERD:
+
+Mahasiswa (NIM) – NIM adalah kunci utama yang secara unik mengidentifikasi setiap mahasiswa.
+Pegawai (ID Pegawai) – ID Pegawai adalah kunci utama yang membedakan setiap pegawai.
+Mata Kuliah (Kode Mata Kuliah) – Setiap mata kuliah memiliki kode unik.
+Produk (ID Produk) – Setiap produk dalam inventaris diidentifikasi oleh ID Produk.
+Pemesanan (ID Pemesanan) – Setiap pesanan memiliki ID unik yang membedakan pesanan satu dengan yang lain.
+                </p>
+              </div>
+            </div>
+          </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-ls-8">
+                <h2 class="text-black mb-4">Relasi</h2>
+                <p class="text-black-50">
+                  Foreign Key adalah atribut atau sekumpulan atribut yang berfungsi sebagai referensi ke Primary Key di tabel lain. Foreign Key digunakan untuk menciptakan relasi antar tabel, dengan memastikan bahwa data di satu tabel konsisten dengan data di tabel lain.
+
+Contoh Foreign Key dalam ERD:
+
+Mahasiswa (Kode Jurusan) – Mengacu pada Primary Key tabel Jurusan, yang mungkin memiliki Kode Jurusan sebagai PK.
+Pemesanan (ID Pelanggan) – Mengacu pada Primary Key tabel Pelanggan.
+Transaksi (ID Produk) – Mengacu pada Primary Key tabel Produk.
+Pengajaran (ID Dosen) – Mengacu pada Primary Key tabel Dosen.
+Pembayaran (ID Pemesanan) – Mengacu pada Primary Key tabel Pemesanan, untuk mengaitkan pembayaran dengan pesanan yang sesuai.
+                </p>
+              </div>
+            </div>
+          </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+              <div class="col-ls-8">
+                <h2 class="text-black mb-4">Relasi</h2>
+                <p class="text-black-50">
+                  Candidate Key adalah satu atau sekumpulan atribut yang secara unik dapat mengidentifikasi sebuah catatan, tetapi tidak dipilih sebagai Primary Key. Jadi, semua Primary Key adalah Candidate Key, tetapi tidak semua Candidate Key menjadi Primary Key. Tabel bisa memiliki lebih dari satu Candidate Key.
+
+Contoh Candidate Key dalam ERD:
+
+Mahasiswa (NIM, Email) – Baik NIM maupun Email bisa digunakan untuk mengidentifikasi mahasiswa secara unik, sehingga keduanya adalah Candidate Key.
+Pegawai (ID Pegawai, No. KTP) – Nomor KTP bisa menjadi Candidate Key selain ID Pegawai.
+Pelanggan (ID Pelanggan, No. Telepon) – Nomor telepon mungkin juga bisa mengidentifikasi pelanggan secara unik.
+Mobil (Nomor Plat, Nomor Rangka) – Nomor plat dan nomor rangka keduanya bisa menjadi Candidate Key untuk tabel Mobil.
+Mata Kuliah (Kode Mata Kuliah, Nama Mata Kuliah) – Kode Mata Kuliah adalah Primary Key, tetapi Nama Mata Kuliah yang unik bisa menjadi Candidate Key.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
               <h4>The story of life</h4>
               <p class="text-black-50 mb-0">
@@ -123,15 +206,11 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- Project One Row-->
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
           <div class="col-lg-6">
-            <img
-              class="img-fluid"
-              src="assets/img/demo-image-01.jpg"
-              alt="..."
-            />
+            <img class="img-fluid" src="assets/img/ERD1.png" alt="..." />
           </div>
           <div class="col-lg-6">
             <div class="bg-black text-center h-100 project">
@@ -152,11 +231,7 @@
         <!-- Project Two Row-->
         <div class="row gx-0 justify-content-center">
           <div class="col-lg-6">
-            <img
-              class="img-fluid"
-              src="assets/img/demo-image-02.jpg"
-              alt="..."
-            />
+            <img class="img-fluid" src="assets/img/ERD2.png" alt="..." />
           </div>
           <div class="col-lg-6 order-lg-first">
             <div class="bg-black text-center h-100 project">
